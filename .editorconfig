@@ -1,0 +1,18 @@
+# 1.不同操作系统 对enter回车 不一样的  =>同意风格样式
+# 2.不同的编辑器 缩进tab =>4个空格 /2个空格 代码风格不一样 在远端拉下来代码 风格不一直  提前规定号好风格
+# 默认读取editorconfig插件  editorconfig 统一代码风格/规范
+# http://editorconfig.org
+
+root = true
+
+[*] # 表示所有文件适用
+charset = utf-8 # 设置文件字符集为 utf-8
+indent_style = space # 缩进风格（tab | space）
+indent_size = 2 # 缩进大小
+end_of_line = lf # 控制换行类型(lf | cr | crlf)
+trim_trailing_whitespace = true # 去除行首的任意空白字符
+insert_final_newline = true # 始终在文件末尾插入一个新行
+
+[*.md] # 表示仅 md 文件适用以下规则
+max_line_length = off
+trim_trailing_whitespace = false
